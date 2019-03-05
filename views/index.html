@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMAGE CONTENT ANALYSIS</title>
+    <link rel="icon" href="favicon.ico" type="views/favicon"/>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">    
+    <link rel="stylesheet" href="../css/styles.css">  
+    
+    <script src="https://apis.google.com/js/api.js"></script>    
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<header class="masthead d-flex">
+    <div class="container text-center my-auto">
+        <h1 class="mb-1">Image Content Analysis</h1>
+        <h3 class="mb-5">
+            <em>T3CHFEST</em>
+        </h3>
+    </div>
+    <div class="overlay"></div>
+</header>
+<section>
+    <div class="container text-center">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#demostrationTab">Demostration</a></li>
+            <li><a href="#firstTab">Exercise 1</a></li>
+            <li><a href="#secondTab">Exercise 2</a></li>
+            <li><a href="#challengeTab">Challenge</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="demostrationTab" class="tab-pane fade show active">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">                    
+                            <div class="col-lg-6 col-md-12">
+                                <img class="img-wrapper" src="../images/faces/face5.jpeg">
+                            </div>     
+                            <div class="col-lg-6 col-md-12 col-btn-test">
+                                <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-test-api" href="#">Test API</a>
+                            </div> 
+                            <div class="col-lg-6 info-test-image text-left">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h4>Image information</h4>
+                                        <ul>
+                                            <li>Faces: <span class="numberFaces"></span> </li>
+                                            <li>Are they happy?:
+                                                <ul class="infoHappy"></ul>
+                                            </li>
+                                            <li>Labels:
+                                                <ul class="labelsInfo"></ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-lg-12 info-test-image text-center">
+                                <div class="col-lg-6 col-info-json">
+                                    <h4>JSON</h4>
+                                    <pre class="code-json" id="code-json-demostration"></pre>
+                                </div>                            
+                            </div>              
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <div id="firstTab" class="tab-pane fade show">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <img class="img-wrapper" src="../images/faces/face3.jpg">
+                    </div>     
+                    <div class="col-lg-6 col-md-12 col-btn-exercise-1">
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-exercise-1" href="#">Get JSON</a>
+                    </div>  
+                    <div class="col-lg-6 col-md-12 info-image-1">
+                        <div class="col-info-json-exercise-1">
+                            <h4>JSON</h4>
+                            <pre class="code-json" id="code-json-exercise-1"></pre>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+            <div id="secondTab" class="tab-pane fade show">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <img class="img-wrapper image-distribution" src="../images/nature/nature2.jpg">
+                    </div> 
+                    <div class="col-lg-6 col-md-6">
+                        <img class="img-wrapper image-distribution" src="../images/nature/nature3.jpeg">
+                    </div> 
+                </div>
+                <div class="row row-image-ej2">
+                    <div class="col-lg-6 col-md-6">
+                        <img class="img-wrapper image-distribution" src="../images/arquitecture/arquitecture1.jpg">
+                    </div>   
+                    <div class="col-lg-6 col-md-6">
+                        <img class="img-wrapper image-distribution" src="../images/nature/nature1.jpeg">
+                    </div>                      
+                </div>
+            </div>
+            
+            <div id="challengeTab" class="tab-pane fade show">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <img class="img-wrapper" src="../images/arquitecture/location/location2.jpg">
+                    </div>     
+                    <div class="col-lg-4 col-md-12 col-btn-challenge">
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-challenge" href="#">Get JSON</a>
+                    </div>  
+                    <div class="col-lg-4 col-md-12 info-image-challenge">
+                        <div class="col-info-json-challenge">
+                            <h4>JSON</h4>
+                            <pre class="code-json" id="code-json-challenge"></pre>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
