@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
     //Buttons functions
     document.getElementById("btn-test-api").addEventListener('click', function () {
-      getInfoImage('faces/face5.jpeg', demostrationExecute)
+      getInfoImage('faces/face4.jpeg', demostrationExecute)
     });
 
     document.getElementById("btn-exercise-1").addEventListener('click', function () {
-      getInfoImage('faces/face3.jpg', exercise1Execute); 
+      getInfoImage('faces/face2.jpg', exercise1Execute); 
     });
 
     document.getElementById("btn-challenge").addEventListener('click', function () {
