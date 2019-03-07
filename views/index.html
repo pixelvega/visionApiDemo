@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">  
     
     <script src="https://apis.google.com/js/api.js"></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbUq316_3xhBPNz8Ad1i4xu7ujOHq8RXQ" defer></script>
     <script src="../js/materialize.min.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -32,7 +33,7 @@
             <li class="active"><a href="#demostrationTab">Demostration</a></li>
             <li><a href="#firstTab">Exercise 1</a></li>
             <li><a href="#secondTab">Exercise 2</a></li>
-            <li><a href="#challengeTab">Challenge</a></li>
+            <li><a href="#extraTab">Extra</a></li>
         </ul>
         <div class="tab-content">
             <div id="demostrationTab" class="tab-pane fade show active">
@@ -40,7 +41,7 @@
                     <div class="col-lg-12">
                         <div class="row">                    
                             <div class="col-lg-6 col-md-12">
-                                <img class="img-wrapper" src="../images/faces/face4.jpeg">
+                                <img class="img-wrapper" src="../images/faces/face5.jpeg">
                             </div>     
                             <div class="col-lg-6 col-md-12 col-btn-test">
                                 <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-test-api" href="#">Test API</a>
@@ -98,26 +99,31 @@
                 </div>
                 <div class="row row-image-ej2">
                     <div class="col-lg-6 col-md-6">
-                        <img class="img-wrapper image-distribution" src="../images/arquitecture/arquitecture1.jpg">
+                        <img class="img-wrapper image-distribution" src="../images/architecture/architecture1.jpg">
                     </div>   
                     <div class="col-lg-6 col-md-6">
                         <img class="img-wrapper image-distribution" src="../images/nature/nature1.jpeg">
                     </div>                      
                 </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-btn-exercise-2">
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-exercise-2" href="#">Analyze</a>
+                    </div>                        
+                </div>
             </div>
             
-            <div id="challengeTab" class="tab-pane fade show">
+            <div id="extraTab" class="tab-pane fade show">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <img class="img-wrapper" src="../images/arquitecture/location/location2.jpg">
+                        <img class="img-wrapper" src="../images/architecture/location/location2.jpg">
                     </div>     
-                    <div class="col-lg-4 col-md-12 col-btn-challenge">
-                        <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-challenge" href="#">Get JSON</a>
+                    <div class="col-lg-4 col-md-12 col-btn-extra">
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" id="btn-extra" href="#">Get JSON</a>
                     </div>  
-                    <div class="col-lg-4 col-md-12 info-image-challenge">
-                        <div class="col-info-json-challenge">
+                    <div class="col-lg-4 col-md-12 info-image-extra">
+                        <div class="col-info-json-extra">
                             <h4>JSON</h4>
-                            <pre class="code-json" id="code-json-challenge"></pre>
+                            <pre class="code-json" id="code-json-extra"></pre>
                         </div>
                     </div>            
                 </div>

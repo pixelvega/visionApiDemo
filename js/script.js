@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
     //Buttons functions
     document.getElementById("btn-test-api").addEventListener('click', function () {
-      getInfoImage('faces/face4.jpeg', demostrationExecute)
+      getInfoImage('faces/face5.jpeg', demostrationExecute)
     });
 
     document.getElementById("btn-exercise-1").addEventListener('click', function () {
       getInfoImage('faces/face2.jpg', exercise1Execute); 
     });
 
-    document.getElementById("btn-challenge").addEventListener('click', function () {
-      getInfoImage('arquitecture/location/location2.jpg', challengeExecute);
+    document.getElementById("btn-extra").addEventListener('click', function () {
+      getInfoImage('architecture/locations/location2.jpg', extraExecute);
     });
 
     //Tab function with jquery
@@ -58,6 +58,9 @@ function getInfoImage(imageName, functionToExecute) {
             },
             {
               "type": "LABEL_DETECTION"
+            },
+            {
+              "type": "LANDMARK_DETECTION"
             }
           ]
         }
@@ -93,11 +96,11 @@ function exercise1Execute (infoImage){
   document.getElementsByClassName('info-image-1')[0].style.display = 'block';
 }
 
-function challengeExecute (infoImage){
+function extraExecute (infoImage){
   let jsonInfoImage = JSON.stringify(infoImage, undefined, 4);
-  document.getElementById("code-json-challenge").innerHTML = jsonInfoImage;
-  document.getElementsByClassName('col-btn-challenge')[0].style.display = 'none';
-  document.getElementsByClassName('info-image-challenge')[0].style.display = 'block';     
+  document.getElementById("code-json-extra").innerHTML = jsonInfoImage;
+  document.getElementsByClassName('col-btn-extra')[0].style.display = 'none';
+  document.getElementsByClassName('info-image-extra')[0].style.display = 'block';     
 }
 
 function detectFaces(infoImage){

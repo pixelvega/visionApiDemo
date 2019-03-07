@@ -45,11 +45,11 @@ section h2{
     width: 100%;
 }
 
-#btn-test-api, #btn-exercise-1, #btn-challenge{
+#btn-test-api, #btn-exercise-1, #btn-extra{
     margin-top: 100px;
 }
 
-.info-test-image, .info-image-1, .info-image-challenge{
+.info-test-image, .info-image-1, .info-image-extra{
     display: none;
     height: 400px;
 }
@@ -58,7 +58,7 @@ section h2{
     margin: 50px auto;
 }
 
-.col-info-json, .col-info-json-exercise-1, .col-info-json-challenge{
+.col-info-json, .col-info-json-exercise-1, .col-info-json-extra{
     margin-bottom: 50px;
     height: 550px;
     position: relative;
@@ -146,4 +146,19 @@ a{
 
 .row-image-ej2{
     margin-top: 30px;
+}
+
+.col-btn-exercise-2{
+    margin: 30px 0;
+}
+
+.row-map-show{
+    display: none;
+    margin: 120px auto;
+    height: 500px;
+    padding: 0 35px;
+}
+
+#map{
+    height: 100%;
 }
