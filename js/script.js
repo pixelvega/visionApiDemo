@@ -118,7 +118,7 @@ function detectHappiness(infoImage){
     });
 }
 
-function detectLabels(infoImage){//MANU append create elem
+function detectLabels(infoImage){
     let arrayLabels = infoImage.responses[0].labelAnnotations;
     arrayLabels.forEach(label => {
         let labelListElement = document.createElement('li');
