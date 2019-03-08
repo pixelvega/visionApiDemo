@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
       getInfoImage('faces/face2.jpg', exercise1Execute); 
     });
 
+    document.getElementById("btn-exercise-2").addEventListener('click', function () {
+      getInfoImage('nature/nature1.jpeg', exercise2Photo1Execute); 
+      getInfoImage('nature/nature2.jpg', exercise2Photo2Execute);
+      getInfoImage('architecture/architecture1.jpg', exercise2Photo3Execute);
+      getInfoImage('nature/nature3.jpeg', exercise2Photo4Execute); 
+    });
+
     document.getElementById("btn-extra").addEventListener('click', function () {
       getInfoImage('architecture/locations/location2.jpg', extraExecute);
     });
@@ -90,17 +97,43 @@ function demostrationExecute (infoImage){
 
 
 function exercise1Execute (infoImage){  
-  let jsonInfoImage = JSON.stringify(infoImage, undefined, 4);
-  document.getElementById("code-json-exercise-1").innerHTML = jsonInfoImage;
+  document.getElementById("code-json-exercise-1").innerHTML = jsonInfoImage = JSON.stringify(infoImage, undefined, 4);
   document.getElementsByClassName('col-btn-exercise-1')[0].style.display = 'none';
   document.getElementsByClassName('info-image-1')[0].style.display = 'block';
+
+  console.log(infoImage);
+  //Put your code here. Info Image API result = infoImage
+}
+
+function exercise2Photo1Execute(infoImage){
+  exercise2Execute (infoImage, 1);
+}
+
+function exercise2Photo2Execute(infoImage){
+  exercise2Execute (infoImage, 2);
+}
+
+function exercise2Photo3Execute(infoImage){
+  exercise2Execute (infoImage, 3);
+}
+
+function exercise2Photo4Execute(infoImage){
+  exercise2Execute (infoImage, 4);
+}
+
+function exercise2Execute (infoImage, positionImage){ 
+  console.log(infoImage);
+  console.log(positionImage);
+  //Put your code here. Info Image API result = infoImage
 }
 
 function extraExecute (infoImage){
-  let jsonInfoImage = JSON.stringify(infoImage, undefined, 4);
-  document.getElementById("code-json-extra").innerHTML = jsonInfoImage;
+  document.getElementById("code-json-extra").innerHTML = JSON.stringify(infoImage, undefined, 4);
   document.getElementsByClassName('col-btn-extra')[0].style.display = 'none';
-  document.getElementsByClassName('info-image-extra')[0].style.display = 'block';     
+  document.getElementsByClassName('info-image-extra')[0].style.display = 'block';   
+
+  console.log(infoImage);
+  //Put your code here. Info Image API result = infoImage
 }
 
 function detectFaces(infoImage){

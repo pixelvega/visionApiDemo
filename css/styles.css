@@ -162,3 +162,10 @@ a{
 #map{
     height: 100%;
 }
+
+.lol-class{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
